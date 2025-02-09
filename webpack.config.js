@@ -67,7 +67,9 @@ module.exports = {
     static: './dist',
   },
   plugins: [
-    new HtmlWebpackPlugin(),
+    new HtmlWebpackPlugin({
+      template: './public/index.html'
+    }),
     new ESLintPlugin({
       emitError: true,
       emitWarning: true,
